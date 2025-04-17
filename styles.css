@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #2b2929;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #1caca0;
+  }
+
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .member-card {
+    background: #141313;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .member-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .member-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #ddd;
+    filter: grayscale(0%);
+  }
+
+  .member-image:hover {
+    filter: grayscale(50%);
+  }
+
+  .member-info {
+    padding: 15px;
+  }
+
+  .member-name {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #fff;
+  }
+
+  .member-role {
+    color: #e62121;
+    font-size: 0.95em;
+  }
